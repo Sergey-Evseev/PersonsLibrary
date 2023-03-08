@@ -20,20 +20,19 @@ namespace PersonsLibrary
         //все приватные поля по нотации указываются с подчеркиванием с мал.буквы
         string _name;
         string _lastName;
-        int _age;        
+        int _age;         
 
         public Person(string name, string lastName, int age)
         {
             _name = name;
             _lastName = lastName;
-            _age = age;
-            
+            _age = age;            
         }
         public virtual void Print()//виртуальный чтобы можно было переопределить
-            //в наследнике
+            //в наследнике 
         {
-            Console.WriteLine($"Имя: {_name}\nФамилия:{_lastName}\n" + 
-                $"Возраст:{_age}");
+            Console.WriteLine($"Имя: {_name}\nФамилия: {_lastName}\n" + 
+                $"Возраст: {_age}");
         }
     } //class Person
 
@@ -56,8 +55,5 @@ namespace PersonsLibrary
             Console.WriteLine($"\nСтатус:{_maritalStatus}\nЗарплата:{_salary}");
         }
     }
-
-
-
 
 } //namespace
